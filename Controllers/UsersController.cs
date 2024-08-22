@@ -25,7 +25,7 @@ public class UsersController(DataContext context) : ControllerBase
         return users;
     }
 
-    
+    //different endpoint - to fetch a single user
     [HttpGet("{id:int}")] //api/user/id
     public async Task<ActionResult<AppUser>>GetUser(int id)
     {
